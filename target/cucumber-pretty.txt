@@ -1,0 +1,74 @@
+@LoginLogout
+Feature: Test End to end search and payment using credit card
+
+  Background:                   [90m# EndToEndUserRegistration.feature:4[0m
+    [32mGiven [0m[32mUser is on Login Page[0m [90m# AutomationCode.user_is_on_Login_Page()[0m
+    [32mWhen [0m[32mUser enters username[0m   [90m# AutomationCode.user_enters_username()[0m
+
+  @Smoke
+  Scenario: Registration for Normal User and perform login and logout [90m# EndToEndUserRegistration.feature:10[0m
+    [32mGiven [0m[32mUser is on Login Page[0m                                       [90m# AutomationCode.user_is_on_Login_Page()[0m
+    [32mWhen [0m[32mUser enters username[0m                                         [90m# AutomationCode.user_enters_username()[0m
+    [32mAnd [0m[32mUser enters password[0m                                          [90m# AutomationCode.user_enters_password()[0m
+    [32mAnd [0m[32mUser clicks on signin button[0m                                  [90m# AutomationCode.user_clicks_on_signin_button()[0m
+    [33mThen [0m[33mUser verify welcome message[0m
+    [33mAnd [0m[33mUser verify home page display[0m
+    [33mWhen [0m[33mUser clicks on Compose button[0m
+    [33mAnd [0m[33mUser enter email id in To field[0m
+    [33mAnd [0m[33mUser enter Subject line[0m
+    [33mAnd [0m[33mUser enter body text[0m
+    [33mAnd [0m[33mUser click on Send button[0m
+    [33mThen [0m[33mUser verify email send success message[0m
+    [33mWhen [0m[33mUser click on Sent items link[0m
+    [33mThen [0m[33mUser verify email display in sent items[0m
+    [33mWhen [0m[33mUser click on Logout button[0m
+    [33mThen [0m[33mUser verify logged out message[0m
+    [33mAnd [0m[33mUser verify it navigate to login page[0m
+
+  Background:                   [90m# EndToEndUserRegistration.feature:4[0m
+    [32mGiven [0m[32mUser is on Login Page[0m [90m# AutomationCode.user_is_on_Login_Page()[0m
+    [32mWhen [0m[32mUser enters username[0m   [90m# AutomationCode.user_enters_username()[0m
+
+  @Sanity
+  Scenario: Registration for Normal User and perform login and logout [90m# EndToEndUserRegistration.feature:30[0m
+    [32mAnd [0m[32mUser enters password[0m                                          [90m# AutomationCode.user_enters_password()[0m
+    [32mAnd [0m[32mUser clicks on signin button[0m                                  [90m# AutomationCode.user_clicks_on_signin_button()[0m
+
+  Background:                   [90m# EndToEndUserRegistration.feature:4[0m
+    [32mGiven [0m[32mUser is on Login Page[0m [90m# AutomationCode.user_is_on_Login_Page()[0m
+    [32mWhen [0m[32mUser enters username[0m   [90m# AutomationCode.user_enters_username()[0m
+
+  @Sanity @Regression
+  Scenario: Registration for Normal User and perform login and logout [90m# EndToEndUserRegistration.feature:35[0m
+    [32mAnd [0m[32mUser enters password[0m                                          [90m# AutomationCode.user_enters_password()[0m
+    [32mAnd [0m[32mUser clicks on signin button[0m                                  [90m# AutomationCode.user_clicks_on_signin_button()[0m
+@LoginLogoutAdmin
+Feature: Feature is to test usre registration and perform login - logout
+
+  Background:                   [90m# EndToEndUserRegistrationAdmin.feature:4[0m
+    [32mGiven [0m[32mUser is on Login Page[0m [90m# AutomationCode.user_is_on_Login_Page()[0m
+    [32mWhen [0m[32mUser enters username[0m   [90m# AutomationCode.user_enters_username()[0m
+
+  @Smoke
+  Scenario: Registration for Normal User and perform login and logout [90m# EndToEndUserRegistrationAdmin.feature:10[0m
+    [32mAnd [0m[32mUser enters password[0m                                          [90m# AutomationCode.user_enters_password()[0m
+    [32mAnd [0m[32mUser clicks on signin button[0m                                  [90m# AutomationCode.user_clicks_on_signin_button()[0m
+    [32mThen [0m[32mUser should be logged in[0m                                     [90m# AutomationCode.user_should_be_logged_in()[0m
+
+  Background:                   [90m# EndToEndUserRegistrationAdmin.feature:4[0m
+    [32mGiven [0m[32mUser is on Login Page[0m [90m# AutomationCode.user_is_on_Login_Page()[0m
+    [32mWhen [0m[32mUser enters username[0m   [90m# AutomationCode.user_enters_username()[0m
+
+  @Sanity
+  Scenario: Registration for Normal User and perform login and logout [90m# EndToEndUserRegistrationAdmin.feature:16[0m
+    [32mAnd [0m[32mUser enters password[0m                                          [90m# AutomationCode.user_enters_password()[0m
+    [32mAnd [0m[32mUser clicks on signin button[0m                                  [90m# AutomationCode.user_clicks_on_signin_button()[0m
+
+  Background:                   [90m# EndToEndUserRegistrationAdmin.feature:4[0m
+    [32mGiven [0m[32mUser is on Login Page[0m [90m# AutomationCode.user_is_on_Login_Page()[0m
+    [32mWhen [0m[32mUser enters username[0m   [90m# AutomationCode.user_enters_username()[0m
+
+  @Sanity @Regression
+  Scenario: Registration for Normal User and perform login and logout [90m# EndToEndUserRegistrationAdmin.feature:21[0m
+    [32mAnd [0m[32mUser enters password[0m                                          [90m# AutomationCode.user_enters_password()[0m
+    [32mAnd [0m[32mUser clicks on signin button[0m                                  [90m# AutomationCode.user_clicks_on_signin_button()[0m

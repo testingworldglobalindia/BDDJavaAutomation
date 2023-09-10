@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="6" time="24.09287">
+<testcase classname="Test End to end search and payment using credit card" name="Registration for Normal User and perform login and logout" time="6.858903">
+<skipped><![CDATA[Given User is on Login Page.................................................passed
+When User enters username...................................................passed
+Given User is on Login Page.................................................passed
+When User enters username...................................................passed
+And User enters password....................................................passed
+And User clicks on signin button............................................passed
+Then User verify welcome message............................................undefined
+And User verify home page display...........................................undefined
+When User clicks on Compose button..........................................undefined
+And User enter email id in To field.........................................undefined
+And User enter Subject line.................................................undefined
+And User enter body text....................................................undefined
+And User click on Send button...............................................undefined
+Then User verify email send success message.................................undefined
+When User click on Sent items link..........................................undefined
+Then User verify email display in sent items................................undefined
+When User click on Logout button............................................undefined
+Then User verify logged out message.........................................undefined
+And User verify it navigate to login page...................................undefined
+]]></skipped>
+</testcase>
+<testcase classname="Test End to end search and payment using credit card" name="Registration for Normal User and perform login and logout" time="2.818748">
+<system-out><![CDATA[Given User is on Login Page.................................................passed
+When User enters username...................................................passed
+And User enters password....................................................passed
+And User clicks on signin button............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test End to end search and payment using credit card" name="Registration for Normal User and perform login and logout" time="2.913818">
+<system-out><![CDATA[Given User is on Login Page.................................................passed
+When User enters username...................................................passed
+And User enters password....................................................passed
+And User clicks on signin button............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature is to test usre registration and perform login - logout" name="Registration for Normal User and perform login and logout" time="4.739564">
+<system-out><![CDATA[Given User is on Login Page.................................................passed
+When User enters username...................................................passed
+And User enters password....................................................passed
+And User clicks on signin button............................................passed
+Then User should be logged in...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature is to test usre registration and perform login - logout" name="Registration for Normal User and perform login and logout" time="3.401232">
+<system-out><![CDATA[Given User is on Login Page.................................................passed
+When User enters username...................................................passed
+And User enters password....................................................passed
+And User clicks on signin button............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature is to test usre registration and perform login - logout" name="Registration for Normal User and perform login and logout" time="3.360605">
+<system-out><![CDATA[Given User is on Login Page.................................................passed
+When User enters username...................................................passed
+And User enters password....................................................passed
+And User clicks on signin button............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
